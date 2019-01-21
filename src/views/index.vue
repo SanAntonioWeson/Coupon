@@ -22,7 +22,7 @@
 		<div class="welfare">
 			<p class="welfare-title">今日福利</p>
 			<p class="welfare-content">0元专场限时领</p>
-			<button>立即领取<img src="../assets/icon_arrowwhite.png"></button>
+			<button @click="receive">立即领取<img src="../assets/icon_arrowwhite.png"></button>
 		</div>
 		<!-- <hotCoupon @toWelfareDetail="toWelfareDetail" /> -->
 		<hotCoupon />
@@ -138,9 +138,9 @@
 				this.selected.index = index;
 				this.selected.title = item.title;
 			},
-			//到福利详情页面
-			toWelfareDetail(){
-				this.$router.push('welfareDetail')
+			//点击立即领取
+			receive(){
+				this.$router.push({name:'toWelfareDetail',params:{id:2,title:'今日福利'}})
 			},
 			//到优惠券详情页
 			goToDetail(item){
