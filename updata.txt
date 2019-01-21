@@ -1,1 +1,4 @@
 我只是想上传个代码，请不要为难我
+
+
+ Updates were rejected because the tip of your current branch is behind its remote counterpart.
